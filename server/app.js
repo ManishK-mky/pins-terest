@@ -21,7 +21,7 @@ const port = process.env.PORT || 3000;
 
 const start = async () => {
   try {
-    await connectDB("mongodb://127.0.0.1:27017/pin-react");
+    await connectDB(mongoDB-uri);
     app.listen(port, () => {
       console.log(`Server is listening on port ${port}`);
     });
